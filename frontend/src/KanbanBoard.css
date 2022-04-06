@@ -1,0 +1,58 @@
+.kanban-board {
+    align-self: stretch;
+    display: flex;
+    column-gap: 20px;
+}
+
+.kanban-board .status-line { flex: 1 }
+
+.kanban-board .status-line > label {
+    display: flex;
+    justify-content: center;
+}
+
+.kanban-board .tickets-container {
+    background-color: lightgray;
+    border-radius: 25px;
+    height: 400px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    overflow-y: auto;
+}
+
+.kanban-board .ticket {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.kanban-board .ticket:hover {
+    text-decoration: underline;
+}
+
+.kanban-board .drop-target {
+    box-shadow: lightgreen 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.kanban-board .cross {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 1em;
+    height: 1em;
+    background-color: red;
+    fill: white;
+}
+
+.kanban-board .ticket:hover .cross {
+    display: block;
+}

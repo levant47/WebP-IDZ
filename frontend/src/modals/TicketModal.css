@@ -1,0 +1,16 @@
+.ticket-modal {
+    background-color: white;
+    border-radius: 25px;
+    padding: 50px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket-modal textarea {
+    resize: none;
+}
